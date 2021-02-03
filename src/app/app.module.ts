@@ -12,6 +12,7 @@ import { SwitchExampleComponent } from './switch-example/switch-example.componen
 import { MyCardComponent } from './my-card/my-card.component';
 import { NumbersCheckComponent } from './numbers-check/numbers-check.component';
 import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
+import { MyDropdownComponent } from './my-dropdown/my-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
     SwitchExampleComponent,
     MyCardComponent,
     NumbersCheckComponent,
-    MyCalculatorComponent
+    MyCalculatorComponent,
+    MyDropdownComponent
   ],
   imports: [
     BrowserModule,
