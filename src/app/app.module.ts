@@ -13,6 +13,8 @@ import { MyCardComponent } from './my-card/my-card.component';
 import { NumbersCheckComponent } from './numbers-check/numbers-check.component';
 import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
 import { MyDropdownComponent } from './my-dropdown/my-dropdown.component';
+import { SecondPageComponent } from './second-page/second-page.component';
+import { PlusMinusNumbersComponent } from './plus-minus-numbers/plus-minus-numbers.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MyDropdownComponent } from './my-dropdown/my-dropdown.component';
     MyCardComponent,
     NumbersCheckComponent,
     MyCalculatorComponent,
-    MyDropdownComponent
+    MyDropdownComponent,
+    SecondPageComponent,
+    PlusMinusNumbersComponent
   ],
   imports: [
     BrowserModule,
