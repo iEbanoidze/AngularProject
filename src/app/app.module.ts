@@ -15,6 +15,17 @@ import { MyCalculatorComponent } from './my-calculator/my-calculator.component';
 import { MyDropdownComponent } from './my-dropdown/my-dropdown.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { PlusMinusNumbersComponent } from './plus-minus-numbers/plus-minus-numbers.component';
+import { NewCalculatorComponent } from './new-calculator/new-calculator.component';
+import { SelectComponentComponent } from './select-component/select-component.component';
+import { MyImageComponent } from './my-image/my-image.component';
+import { MyJobsComponent } from './my-jobs/my-jobs.component';
+import { JobCandidatesComponent } from './job-candidates/job-candidates.component';
+import { JobVacanciesComponent } from './job-vacancies/job-vacancies.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ParentComponentComponent } from './parent-component/parent-component.component';
+import { FirstChildComponent } from './first-child/first-child.component';
+import { SecondChildComponent } from './second-child/second-child.component';
+import { MyStudentsComponent } from './my-students/my-students.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +41,18 @@ import { PlusMinusNumbersComponent } from './plus-minus-numbers/plus-minus-numbe
     MyCalculatorComponent,
     MyDropdownComponent,
     SecondPageComponent,
-    PlusMinusNumbersComponent
+    PlusMinusNumbersComponent,
+    NewCalculatorComponent,
+    SelectComponentComponent,
+    MyImageComponent,
+    MyJobsComponent,
+    JobCandidatesComponent,
+    JobVacanciesComponent,
+    PageNotFoundComponent,
+    ParentComponentComponent,
+    FirstChildComponent,
+    SecondChildComponent,
+    MyStudentsComponent
   ],
   imports: [
     BrowserModule,
