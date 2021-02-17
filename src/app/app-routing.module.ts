@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FirstChildComponent } from './first-child/first-child.component';
 import { HomeComponent } from './home/home.component';
+import { MyCarsComponent } from './my-cars/my-cars.component';
 import { MyImageComponent } from './my-image/my-image.component';
 import { MyJobsComponent } from './my-jobs/my-jobs.component';
 import { MyStudentsComponent } from './my-students/my-students.component';
@@ -19,7 +20,7 @@ const routes: Routes = [
   {path: "parent/first", component: FirstChildComponent},
   {path: "parent/second", component: SecondChildComponent},
   {path: "students", component: MyStudentsComponent},
-
+  {path: "cars", component: MyCarsComponent},
   {path:'plusminus', component: PlusMinusNumbersComponent},
   {path:'gallery', component: MyImageComponent},
   {path:'jobs', component: MyJobsComponent},

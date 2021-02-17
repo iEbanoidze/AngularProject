@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DirectivesExampleComponent } from './directives-example/directives-example.component';
 import { MyTableComponent } from './my-table/my-table.component';
 import { SwitchExampleComponent } from './switch-example/switch-example.component';
@@ -26,7 +26,7 @@ import { ParentComponentComponent } from './parent-component/parent-component.co
 import { FirstChildComponent } from './first-child/first-child.component';
 import { SecondChildComponent } from './second-child/second-child.component';
 import { MyStudentsComponent } from './my-students/my-students.component';
-
+import { MyCarsComponent } from './my-cars/my-cars.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,11 +52,13 @@ import { MyStudentsComponent } from './my-students/my-students.component';
     ParentComponentComponent,
     FirstChildComponent,
     SecondChildComponent,
-    MyStudentsComponent
+    MyStudentsComponent,
+    MyCarsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [],
