@@ -5,20 +5,31 @@
         <th>Model</th>
         <th>Year</th>
         <th>Color</th>
-        
+        <th></th>
+        <th></th>
       </thead>
       <tbody> <tr *ngFor="let car of carArray">
           <td>{{car.id}}</td>
           <td>{{car.name}}</td>
           <td>{{car.year}}</td>
           <td>{{car.color}}</td>
-          
+          <td><button class="btn btn-danger" (click)=deleteCar(car.id)>X</button></td>
+          <td><button class="btn btn-warning" (click)=edit(car.id)>!</button></td>
         </tr>
       </tbody>
     </table>
 
     </div>
-
+   <!-- <div class="container">
+      <div class="col-3">
+        <div class="alert alert-danger" *ngIf="showChangeYearError">
+          <strong>მოხდა შეცდომა!</strong> მოცემული აიდით ელემენტი ვერ მოიძებნა
+        </div>
+      <input type="number" class="form-control" [(ngModel)]="inputId"/>
+      <button class="btn btn-primary" (click)="changeYear()">Check</button>
+    </div>
+    </div>-->
+  <br>
     <div class="container">
         <div class="alert alert-danger" *ngIf="showError">
             <strong>მოხდა შეცდომა!</strong> {{errorText}}
@@ -43,7 +54,9 @@
     <button class="btn btn-primary" type="submit">Save</button>
     </form>
     </div>
+
+
     
 
-    <button (click)="changeName()">Change Name</button>
+   <!-- <button (click)="changeName()">Change Name</button>-->
    <!-- <p>Input value is: {{nameControl.value}}</p>-->
