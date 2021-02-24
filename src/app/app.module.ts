@@ -27,6 +27,7 @@ import { FirstChildComponent } from './first-child/first-child.component';
 import { SecondChildComponent } from './second-child/second-child.component';
 import { MyStudentsComponent } from './my-students/my-students.component';
 import { MyCarsComponent } from './my-cars/my-cars.component';
+import { ShopComponent } from './shop/shop.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +54,8 @@ import { MyCarsComponent } from './my-cars/my-cars.component';
     FirstChildComponent,
     SecondChildComponent,
     MyStudentsComponent,
-    MyCarsComponent
+    MyCarsComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,

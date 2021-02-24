@@ -11,6 +11,7 @@ import { ParentComponentComponent } from './parent-component/parent-component.co
 import { PlusMinusNumbersComponent } from './plus-minus-numbers/plus-minus-numbers.component';
 import { SecondChildComponent } from './second-child/second-child.component';
 import { SecondPageComponent } from './second-page/second-page.component';
+import { ShopComponent } from './shop/shop.component';
 
 const routes: Routes = [
   {path:'second-page', component: SecondPageComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: "parent/first", component: FirstChildComponent},
   {path: "parent/second", component: SecondChildComponent},
   {path: "students", component: MyStudentsComponent},
+  {path: "shop", component: ShopComponent},
   {path: "cars", component: MyCarsComponent},
   {path:'plusminus', component: PlusMinusNumbersComponent},
   {path:'gallery', component: MyImageComponent},
