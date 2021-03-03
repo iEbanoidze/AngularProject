@@ -37,6 +37,8 @@
             <th>Price</th>
             <th>Quantity</th>
             <th>Types</th>
+            <th></th>
+            <th></th>
         </thead>
         <tbody>
             <tr *ngFor="let product of productsArray">
@@ -45,6 +47,8 @@
             <td>{{product.price}}</td>
             <td>{{product.quantity}}</td>
             <td>{{product.type}}</td>
+            <td><button class="btn btn-primary" (click)="deleteProduct(product.id)">X</button></td>
+            <td><button class="btn btn-primary" (click)="findByName(product.name)">O</button></td>
         </tr>
         </tbody>
     </table>

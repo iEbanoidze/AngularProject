@@ -17,8 +17,8 @@ export class ShopComponent implements OnInit {
   productsArray: any = [
     {id: 1,name:"apple", price:2, quantity:3000, type:"ხილი"},
     {id: 2,name:"banana", price:3, quantity:300, type:"ხილი"},
-    {id: 3,name:"vodka", price:30, quantity:1000, type:"სასმელი"},
-    {id: 4,name:"orange", price:5, quantity:3000, type:"ხილი"},
+    {id: 3,name:"banana", price:30, quantity:1000, type:"სასმელი"},
+    {id: 4,name:"banana", price:5, quantity:3000, type:"ხილი"},
     {id: 5,name:"tomato", price:3, quantity:55000, type:"ხილი"}
   ]
 
@@ -130,4 +130,25 @@ else{
     this.errorText = ""
   }*/
   }
+
+deleteProduct (id : number)
+{
+  var element = this.productsArray.find((x:any) => x.id == id);
+  console.log(element);
+  
+var elementIndex = this.productsArray.findIndex((x:any) =>
+ x.id == id)
+
+ console.log(elementIndex);
+}
+findByName(name : string)
+{
+  var product = this.productsArray.find((x: any) => x.name == name);
+  //console.log(product);
+
+  var productList = this.productsArray.filter((x: any) =>
+   x.name == name && x.price == 5);
+  console.log(productList);
+}
+
 }

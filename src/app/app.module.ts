@@ -28,6 +28,10 @@ import { SecondChildComponent } from './second-child/second-child.component';
 import { MyStudentsComponent } from './my-students/my-students.component';
 import { MyCarsComponent } from './my-cars/my-cars.component';
 import { ShopComponent } from './shop/shop.component';
+import { ServiceExampleComponent } from './service-example/service-example.component';
+import { TestdataService } from './testdata.service';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +59,10 @@ import { ShopComponent } from './shop/shop.component';
     SecondChildComponent,
     MyStudentsComponent,
     MyCarsComponent,
-    ShopComponent
+    ShopComponent,
+    ServiceExampleComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +70,7 @@ import { ShopComponent } from './shop/shop.component';
     ReactiveFormsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [TestdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
