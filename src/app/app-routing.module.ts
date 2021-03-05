@@ -15,10 +15,14 @@ import { SecondChildComponent } from './second-child/second-child.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { ServiceExampleComponent } from './service-example/service-example.component';
 import { ShopComponent } from './shop/shop.component';
+import { MyParentComponent } from './testFolder/my-parent/my-parent.component';
+import { ToysListComponent } from './toys/toys-list/toys-list.component';
 
 const routes: Routes = [
   {path:'second-page', component: SecondPageComponent},
   {path:'home', component: HomeComponent},
+  {path:'my-parent', component: MyParentComponent},
+  {path:'toys', component: ToysListComponent},
   {path:'parent', component: ParentComponent},
   {path:'child', component: ChildComponent},
   {path: "students", component: MyStudentsComponent},

@@ -32,6 +32,10 @@ import { ServiceExampleComponent } from './service-example/service-example.compo
 import { TestdataService } from './testdata.service';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { MyChildComponent } from './testFolder/my-child/my-child.component';
+import { MyParentComponent } from './testFolder/my-parent/my-parent.component';
+import { ToysListComponent } from './toys/toys-list/toys-list.component';
+import { ToysFormComponent } from './toys/toys-form/toys-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +66,11 @@ import { ChildComponent } from './child/child.component';
     ShopComponent,
     ServiceExampleComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    MyChildComponent,
+    MyParentComponent,
+    ToysListComponent,
+    ToysFormComponent
   ],
   imports: [
     BrowserModule,
