@@ -13,13 +13,12 @@
             <td>{{toy.id}}</td>
             <td>{{toy.name}}</td>
             <td>{{toy.price}}</td>
-            <td>{{toy.price}}</td>
             <td>{{toy.type}}</td>
-            <td><button class="btn btn-primary">Delete</button></td>
-            <td><button class="btn btn-primary">Edit</button></td>
+            <td><button class="btn btn-primary" (click)="delete(toy.id)">Delete</button></td>
+            <td><button class="btn btn-primary"(click)="edit(toy.id)">Edit</button></td>
         </tr>
         </tbody>
     </table>
 </div>
 
-<app-toys-form (toysadd)="ToysAddHandler($event)"></app-toys-form>
+<app-toys-form (toysadd)="ToysAddHandler($event)" [maxId]="max" [toy]="editToy"></app-toys-form>

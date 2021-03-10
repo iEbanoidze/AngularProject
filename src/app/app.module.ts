@@ -36,6 +36,9 @@ import { MyChildComponent } from './testFolder/my-child/my-child.component';
 import { MyParentComponent } from './testFolder/my-parent/my-parent.component';
 import { ToysListComponent } from './toys/toys-list/toys-list.component';
 import { ToysFormComponent } from './toys/toys-form/toys-form.component';
+import { HttpClientModule} from '@angular/common/http';
+import { UsersListComponent } from './users-list/users-list.component';
+import { UserserviseService } from './userservise.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,15 +73,17 @@ import { ToysFormComponent } from './toys/toys-form/toys-form.component';
     MyChildComponent,
     MyParentComponent,
     ToysListComponent,
-    ToysFormComponent
+    ToysFormComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [TestdataService],
+  providers: [TestdataService, UserserviseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -17,6 +17,7 @@ import { ServiceExampleComponent } from './service-example/service-example.compo
 import { ShopComponent } from './shop/shop.component';
 import { MyParentComponent } from './testFolder/my-parent/my-parent.component';
 import { ToysListComponent } from './toys/toys-list/toys-list.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 const routes: Routes = [
   {path:'second-page', component: SecondPageComponent},
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path:'child', component: ChildComponent},
   {path: "students", component: MyStudentsComponent},
   {path: "shop", component: ShopComponent},
+  {path: "users", component: UsersListComponent},
   {path: "serviceexample", component: ServiceExampleComponent},
   {path: "cars", component: MyCarsComponent},
   {path:'plusminus', component: PlusMinusNumbersComponent},

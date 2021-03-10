@@ -8,7 +8,7 @@ export class TestdataService {
 
   constructor() { }
 
-  getData()
+  getData() 
   {
     var productsArray: any = [
       {id: 1,name:"apple", price:2, quantity:3000, type:"ხილი"},
